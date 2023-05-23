@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --text-color : #333;
+    --bg-color : #f8f8fa;
+    --inner-color: #fff;    
+}
+
+/* 다크 모드 */
+.dark {
+    --text-color : #fff;
+    --bg-color : #333;
+    --inner-color: #555;    
+}
+
+* {
+    font-family: 'Pretendard-Regular';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+.todo {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner {
+    display: grid;
+    /* grid-template-rows: auto 1fr auto; */
+    grid-gap: 1rem;
+    grid-template-rows: 1.5rem auto 1.5rem;
+    background-color: var(--inner-color);
+    border-radius: 1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 30rem;
+    padding: 2rem;
+    position: relative;
+    width: 20rem;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ul .todoList style sheet */
+.todoList {
+    overflow: auto;
+}
+.todoList li {
+    display: grid;  
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 0.5rem;
+}
+.todoItem-completed {
+    text-decoration: line-through;
+    color: darkgrey;
+}
+/* form .todoInput style sheet */
+.todoInput {
+    display: flex;
+}
+.todoInput > input {
+    width: 100%;
+}
