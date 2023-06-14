@@ -37,7 +37,7 @@ export default function TodoList() {
         setTodos(todos.map(item =>
             item.idx === idx ? { ...item, checked: !item.checked } : item
         ))
-        console.log(idx)
+        // console.log(idx)
     };
 
     const filteredTodos = todos.filter(item => {
