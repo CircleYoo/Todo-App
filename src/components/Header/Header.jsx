@@ -8,7 +8,7 @@ export default function Header({ filter, category, onFilterChange }) {
   return (
     <header className={styles.header}>
       <button onClick={() => toggleDarkMode()}>
-        { darkMode ? (<BsSunFill />) : (<BsFillMoonFill />) }
+        {darkMode ? (<BsSunFill />) : (<BsFillMoonFill />)}
       </button>
       <ul className={styles.filter}>
         {category.map((value, index) => {
@@ -25,4 +25,3 @@ export default function Header({ filter, category, onFilterChange }) {
     </header>
   );
 }
-
