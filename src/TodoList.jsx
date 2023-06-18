@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BsPlus } from "react-icons/bs";
 import Todo from './components/Todo/Todo';
 import { v4 as uuidv4 } from 'uuid';
@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from 'uuid';
 // Todo항목을 추가하고, 상태를 관리하며, 필터링하여 보여주는 기능
 export default function TodoList({ filter }) {
   const [text, setText] = useState("");
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState(storeTodos);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -46,6 +46,10 @@ export default function TodoList({ filter }) {
     console.log(toggled)
   };
 
+  useEffect(() => {
+    localStorage.setItem('todos', JSON.stringify(todos));
+  }, [todos]);
+  
   // 필터링된 Todo 항목을 반환하기 위해 'todos' 배열을 필터링
   const getFilteredItems = (todos, filter) => {
     if (filter === 'all') {
@@ -82,4 +86,9 @@ export default function TodoList({ filter }) {
       </form>
     </div>
   );
+}
+
+function storeTodos() {
+  const todos = localStorage.getItem('todos');
+  return todos ? JSON.parse(todos) : [];
 }
