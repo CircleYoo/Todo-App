@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import TodoList from './TodoList';
+import TodoList from './components/TodoList/TodoList';
 import Header from './components/Header/Header';
 import { DarkModeProvider } from './context/DarkModeContext';
 

@@ -12,9 +12,9 @@ nav {
 }
 .date h1 {
   color: var(--color-txt);
-  margin: 0;
   margin-top: 0.375rem;
   font-weight: 400;
+  font-size: 2rem;
 }
 .mode {
   color: var(--color-accent);
@@ -32,6 +32,7 @@ nav {
   justify-content: space-between;
   border-top: 1px solid var(--color-line);
   border-bottom: 1px solid var(--color-line);
+  padding: 1rem 2.75rem;
 
 }
 .filters li button {
@@ -40,7 +41,6 @@ nav {
   font-weight: 600;
   font-size: 0.875rem;
   text-transform: uppercase;
-  margin: 1rem 2.75rem;
   cursor: pointer;
 }
 .filters li button.selected {
