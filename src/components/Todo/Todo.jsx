@@ -1,5 +1,6 @@
 import React from 'react';
 import { BsX } from "react-icons/bs";
+import styles from './Todo.module.css';
 
 export default function Todo({todo, onToggle, onDelete}) {
   const { id, text, status } = todo;
@@ -9,7 +10,7 @@ export default function Todo({todo, onToggle, onDelete}) {
   }
   const handleDelete = () => onDelete(todo);
   return (
-    <li>
+    <li className={styles.li}>
       <input
         type="checkbox"
         id={id}

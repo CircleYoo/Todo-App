@@ -32,6 +32,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/react", "virtual:d25bef3d82aabde5e10d0c8ae650b74ee0d7708cb1edf6c5eb4136a5fa66c13567ca3c0c632be64734da3e9fff5417589e16e1a4e1f09e79020b4d65018a0d57#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:d25bef3d82aabde5e10d0c8ae650b74ee0d7708cb1edf6c5eb4136a5fa66c13567ca3c0c632be64734da3e9fff5417589e16e1a4e1f09e79020b4d65018a0d57#npm:13.5.0"],\
             ["eslint-config-react-app", "virtual:d25bef3d82aabde5e10d0c8ae650b74ee0d7708cb1edf6c5eb4136a5fa66c13567ca3c0c632be64734da3e9fff5417589e16e1a4e1f09e79020b4d65018a0d57#npm:7.0.1"],\
+            ["moment", "npm:2.29.4"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:d25bef3d82aabde5e10d0c8ae650b74ee0d7708cb1edf6c5eb4136a5fa66c13567ca3c0c632be64734da3e9fff5417589e16e1a4e1f09e79020b4d65018a0d57#npm:18.2.0"],\
             ["react-icons", "virtual:d25bef3d82aabde5e10d0c8ae650b74ee0d7708cb1edf6c5eb4136a5fa66c13567ca3c0c632be64734da3e9fff5417589e16e1a4e1f09e79020b4d65018a0d57#npm:4.8.0"],\
@@ -11878,6 +11879,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["moment", [\
+        ["npm:2.29.4", {\
+          "packageLocation": "./.yarn/cache/moment-npm-2.29.4-902943305d-0ec3f9c2bc.zip/node_modules/moment/",\
+          "packageDependencies": [\
+            ["moment", "npm:2.29.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["ms", [\
         ["npm:2.0.0", {\
           "packageLocation": "./.yarn/cache/ms-npm-2.0.0-9e1101a471-0e6a22b8b7.zip/node_modules/ms/",\
@@ -16347,6 +16357,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/react", "virtual:d25bef3d82aabde5e10d0c8ae650b74ee0d7708cb1edf6c5eb4136a5fa66c13567ca3c0c632be64734da3e9fff5417589e16e1a4e1f09e79020b4d65018a0d57#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:d25bef3d82aabde5e10d0c8ae650b74ee0d7708cb1edf6c5eb4136a5fa66c13567ca3c0c632be64734da3e9fff5417589e16e1a4e1f09e79020b4d65018a0d57#npm:13.5.0"],\
             ["eslint-config-react-app", "virtual:d25bef3d82aabde5e10d0c8ae650b74ee0d7708cb1edf6c5eb4136a5fa66c13567ca3c0c632be64734da3e9fff5417589e16e1a4e1f09e79020b4d65018a0d57#npm:7.0.1"],\
+            ["moment", "npm:2.29.4"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:d25bef3d82aabde5e10d0c8ae650b74ee0d7708cb1edf6c5eb4136a5fa66c13567ca3c0c632be64734da3e9fff5417589e16e1a4e1f09e79020b4d65018a0d57#npm:18.2.0"],\
             ["react-icons", "virtual:d25bef3d82aabde5e10d0c8ae650b74ee0d7708cb1edf6c5eb4136a5fa66c13567ca3c0c632be64734da3e9fff5417589e16e1a4e1f09e79020b4d65018a0d57#npm:4.8.0"],\

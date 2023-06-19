@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { BsPlus } from "react-icons/bs";
 import Todo from './components/Todo/Todo';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -46,10 +45,12 @@ export default function TodoList({ filter }) {
     console.log(toggled)
   };
 
+  // todos가 업데이트되면 localStorage에 데이터 저장한다. 
   useEffect(() => {
+    // 데이터 저장 : JSON 형태의 문자열로 변환한다.
     localStorage.setItem('todos', JSON.stringify(todos));
   }, [todos]);
-  
+
   // 필터링된 Todo 항목을 반환하기 위해 'todos' 배열을 필터링
   const getFilteredItems = (todos, filter) => {
     if (filter === 'all') {
@@ -78,17 +79,18 @@ export default function TodoList({ filter }) {
         <input
           type='text'
           name='todoItem'
-          placeholder='Add Todo'
+          placeholder='add new task'
           value={text}
           onChange={handleChange}
         />
-        <button type='submit'><BsPlus /></button>
+        <button type='submit'>Add</button>
       </form>
     </div>
   );
 }
 
 function storeTodos() {
+  // 데이터 출력 : todos라는 key를 불러온다.
   const todos = localStorage.getItem('todos');
   return todos ? JSON.parse(todos) : [];
 }

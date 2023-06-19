@@ -1,0 +1,36 @@
+nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.date p {
+  color: var(--color-txt-light);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.date h1 {
+  color: var(--color-txt);
+  margin: 0;
+  font-weight: 400;
+}
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line);
+
+}
+.filters li button {
+  color: var(--color-txt-light);
+  font-family: 'suit';
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  margin: 1rem 2.75rem;
+  cursor: pointer;
+}
+.filters li button.selected {
+    color: var(--color-txt);
+}
