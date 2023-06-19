@@ -8,7 +8,11 @@ export default function Todo({todo, onToggle, onDelete}) {
   const status = e.target.checked ? 'completed' : 'active';
     onToggle({ ...todo, status });
   }
-  const handleDelete = () => onDelete(todo);
+  const handleDelete = () => {
+    onDelete(todo)
+    console.log('ddd')
+  };
+
   return (
     <li className={styles.todo}>
       <input

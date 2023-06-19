@@ -31,11 +31,10 @@ export default function TodoList({ filter }) {
   };
 
   // 특정 todo 항목을 제거하기 위해 'todos' 상태를 필터링하여 업데이트
-  const handleDelete = (idx) => {
-    setTodos(todos.filter(item => item.idx !== idx))
+  const handleDelete = (deleted) => {
+    setTodos(todos.filter(item => item.idx !== deleted.idx))
   };
 
-  // handleUpdate
   // Todo 항목의 체크를 토글여부를 확인하기 위해 'todos'상태를 매핑하여 업데이트
   const handleToggle = (toggled) => {
     setTodos(todos.map(item => item.id === toggled.id ? toggled : item))
@@ -43,7 +42,6 @@ export default function TodoList({ filter }) {
      * todos의 새로운 배열을 만든다.
      * 기존의 투두 id가 toggle한 id와 동일하다면 ? toggle 아니면 item
      */
-    console.log(toggled)
   };
 
   // todos가 업데이트되면 localStorage에 데이터 저장한다. 

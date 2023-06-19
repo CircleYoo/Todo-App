@@ -9,7 +9,6 @@ export default function Header({ filter, category, onFilterChange }) {
   const date = new Date();
   const formattedDate = moment(date).format('MMMM Do YYYY');
   const formattedDay = moment().format('dddd');
-  console.log(formattedDate, formattedDay);
 
   return (
     <header className={styles.header}>
