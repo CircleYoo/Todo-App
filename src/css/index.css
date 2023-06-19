@@ -34,18 +34,16 @@ body {
 }
 
 #root {
-  /* width: 100%;
-  height: 60%; */
-  width: 416px;
-  height: 736px;
+  width: 26rem;
+  height: 46rem;
   background-color: var(--color-box) ;
   border-radius: 0.5rem;
   box-shadow: var(--shadow-bg);
   display: flex;
   flex-direction: column;
-  max-width: 500px;
   overflow: hidden;
   position: relative;
+  margin: auto 1rem;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -83,17 +81,14 @@ li, p {
 }
 
 ::-webkit-scrollbar {
+  position: absolute;
   width: 0.5rem;
 }
 
 ::-webkit-scrollbar-track {
   background-color: var(--color-bg);
-}
+} 
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--color-line);
-  cursor: grab;
-}
-::-webkit-scrollbar-thumb:hover {
-  cursor: grabbing;
 }
