@@ -2,7 +2,7 @@
   --color-accent: #FCB523;
   --color-bg: #F8F8FA;
   --color-box: #FFFFFF;
-  /* --color-line: #F5F5F5; */
+  --color-list-line: #F5F5F5;
   --color-line: #E0E0DE;
   --color-txt: #636368;
   --color-txt-light: #C6C6C9;
@@ -12,7 +12,7 @@ html.dark {
   --color-accent: #6D64ED;
   --color-bg: #323544;
     --color-box: #1C1E2A;
-  /* --color-line: #272B32; */
+  --color-list-line: #272B32;
   --color-line: #525152;
   --color-txt: #F7F7F7;
   --color-txt-light: #9E9E9E;
@@ -61,7 +61,15 @@ ul {
   margin: 0;
 }
 
-button, input {
+button{
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  cursor: pointer;
+}
+input {
   background-color: transparent;
   border: 0;
   margin: 0;
@@ -69,6 +77,23 @@ button, input {
   padding: 0;
 }
 
+
 li, p {
   margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-line);
+  cursor: grab;
+}
+::-webkit-scrollbar-thumb:hover {
+  cursor: grabbing;
 }

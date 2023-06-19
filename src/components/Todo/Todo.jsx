@@ -5,13 +5,14 @@ import styles from './Todo.module.css';
 export default function Todo({todo, onToggle, onDelete}) {
   const { id, text, status } = todo;
   const handleChange = (e) => {
-    const status = e.target.checked ? 'completed' : 'active';
+  const status = e.target.checked ? 'completed' : 'active';
     onToggle({ ...todo, status });
   }
   const handleDelete = () => onDelete(todo);
   return (
-    <li className={styles.li}>
+    <li className={styles.todo}>
       <input
+        className={styles.checkbox}
         type="checkbox"
         id={id}
         checked={status === 'completed'}
@@ -19,11 +20,11 @@ export default function Todo({todo, onToggle, onDelete}) {
       />
       <label
         htmlFor={id}
-        className={ `todo${status === 'completed' ? '-completed' : ''}`}
+        className={`${styles.text} ${status === 'completed' ? 'completed' : ''}`}
       >
         {text}
       </label>
-      <button onClick={handleDelete}><BsX /></button>
+      <button className={styles.button} onClick={handleDelete}><BsX /></button>
     </li>
   );
 }
