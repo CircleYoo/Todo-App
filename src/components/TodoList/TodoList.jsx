@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Todo from '../Todo/Todo';
+import TodoItem from '../TodoItem/TodoItem';
 import { v4 as uuidv4 } from 'uuid';
 import styles from './TodoList.module.css';
 
@@ -55,7 +55,7 @@ export default function TodoList({ filter }) {
     if (filter === 'all') {
       return todos;
     }
-    return todos.filter(todo => todo.status === filter)
+    return todos.filter(todoItem => todoItem.status === filter)
   };
   const filteredTodos = getFilteredItems(todos, filter);
 
@@ -63,9 +63,9 @@ export default function TodoList({ filter }) {
     <section className={styles.container}>
       <ul className={styles.ul}>
         {filteredTodos.map((item) => (
-          <Todo
+          <TodoItem
             key={item.id}
-            todo={item}
+            todoItem={item}
             onToggle={handleToggle}
             onDelete={handleDelete}
           />

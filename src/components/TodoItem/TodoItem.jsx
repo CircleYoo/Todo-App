@@ -1,15 +1,15 @@
 import React from 'react';
 import { BsX } from "react-icons/bs";
-import styles from './Todo.module.css';
+import styles from './TodoItem.module.css';
 
-export default function Todo({todo, onToggle, onDelete}) {
-  const { id, text, status } = todo;
+export default function Todo({todoItem, onToggle, onDelete}) {
+  const { id, text, status } = todoItem;
   const handleChange = (e) => {
   const status = e.target.checked ? 'completed' : 'active';
-    onToggle({ ...todo, status });
+    onToggle({ ...todoItem, status });
   }
   const handleDelete = () => {
-    onDelete(todo)
+    onDelete(todoItem)
     console.log('ddd')
   };
 
