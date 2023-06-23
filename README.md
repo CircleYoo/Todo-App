@@ -1,5 +1,14 @@
 # React로 TodoList 만들기
 **배포 주소** : https://strong-douhua-85a247.netlify.app/ <br />
+
+### 💼 작업기간
+> 1인 제작 <br/>
+  2023.05.23 ~ 2023.06.16
+  
+### ⚙ 개발환경
+> `React` <br/>
+  `PostCSS`
+
 ### 프로젝트 목표
 - useState, useEffect, useContext 등 **리액트 훅을 사용**
 - creact-react-app으로 기본 탑재되어 있는 **PostCSS**를 사용
