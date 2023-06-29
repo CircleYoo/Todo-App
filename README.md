@@ -11,7 +11,7 @@
 
 ### 프로젝트 목표
 - useState, useEffect, useContext 등 **리액트 훅을 사용**
-- creact-react-app으로 기본 탑재되어 있는 **PostCSS**를 사용
+- creact-react-app으로 기본 탑재되어 있는 **PostCSS**(CSS Module)를 사용
   
 **현재 날짜**
 - moment.js를 사용하여 현재 날짜, 요일 출력
