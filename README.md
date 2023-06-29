@@ -7,7 +7,7 @@
   
 ### ⚙ 개발환경
 > `React` <br/>
-  `PostCSS`
+  `PostCSS(CSS Module)`
 
 ### 프로젝트 목표
 - useState, useEffect, useContext 등 **리액트 훅을 사용**
