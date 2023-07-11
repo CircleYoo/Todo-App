@@ -1,6 +1,12 @@
 # React로 TodoList 만들기
 **배포 주소** : https://strong-douhua-85a247.netlify.app/ <br />
 
+<img src="https://github.com/CircleYoo/Todo-List/blob/master/src/assets/%EC%8B%9C%EC%95%88.png" width="100%"/> <br/>
+
+## ⚡ 프로젝트 목표
+- useState, useEffect, useContext 등 **리액트 훅을 사용**
+- creact-react-app으로 기본 탑재되어 있는 **PostCSS**(CSS Module)를 사용
+
 ### 💼 작업기간
 > 1인 제작 <br/>
   2023.05.23 ~ 2023.06.16
@@ -9,10 +15,7 @@
 > `React` <br/>
   `PostCSS(CSS Module)`
 
-### 프로젝트 목표
-- useState, useEffect, useContext 등 **리액트 훅을 사용**
-- creact-react-app으로 기본 탑재되어 있는 **PostCSS**(CSS Module)를 사용
-  
+## ✔ 주요기능
 **현재 날짜**
 - moment.js를 사용하여 현재 날짜, 요일 출력
   
